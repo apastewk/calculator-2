@@ -17,10 +17,10 @@ while True:
         if i != 0:
             list_of_requested_operation[i] = float(list_of_requested_operation[i])
     
-    if list_of_requested_operation[0] == "q":
+    if list_of_requested_operation[0].lower() == "q":
         break
     elif list_of_requested_operation[0] == "+":
-        print add(list_of_requested_operation[1], list_of_requested_operation[2])
+        print add(list_of_requested_operation[1:]) 
     elif list_of_requested_operation[0] == "-":
         print subtract(list_of_requested_operation[1], list_of_requested_operation[2])
     elif list_of_requested_operation[0] == "*":
